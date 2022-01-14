@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+/*font-family: 'Poppins', sans-serif;*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+main{
+    background: linear-gradient(64.5deg, #A07CF8 0%, rgba(110, 108, 217, 0.97) 22.4%, #839EF0 46.88%, #6CA4D9 74.48%, #7CDCF8 100%);
+    height: 94vh;
+
+    margin: 20px;
+    border-radius: 20px;
+    
+    
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.281);
+}
+
+h1 {
+    color: #fff;
+    font-size: 4rem;
+    text-align: center;
+    padding: 10px;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+div{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#from_currency,#to_currency{
+    font-size: 3rem;
+    border: 0;
+    padding: 1.5rem;
+    border-radius: 20px;
+    margin: 10px;
+    outline: 0;
+    width: 30vw;
+    text-align: start;
+
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.281);
+    cursor: pointer;
+}
+
+
+
+
+#from_ammount,#to_ammount {
+    font-size: 8rem;
+    border: 0;
+    padding: 1.5rem 1.5rem;
+    border-radius: 20px;
+    margin: 10px;
+    outline: 0;
+    width: 30vw;
+    text-align: center;
+    
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.281);
+}
+
+#button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#swap {
+    font-size: 3rem;
+    width: 150px;
+    height: 60px;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.281);
+    cursor: pointer;
+
+}
+
+#swap:hover {
+    background-color: rgb(211, 211, 211);
+}
+
+@media (max-width: 768px){
+    html {
+        font-size: 45%;
+    }
+}
+
+@media (max-width: 500px){
+    html {
+        font-size: 40%;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #from_currency,#to_currency {
+        margin: auto;
+        width: 300px;
+    }
+
+    #from_ammount,#to_ammount {
+        width: 300px;
+    }
+
+    #swap {
+        width: 100px;
+        height: 50px;
+    }
+
+}
+
+@media (max-width: 375px) {
+    html {
+        font-size: 38%;
+    }
+
+    #from_currency,#to_currency {
+        margin: auto;
+        width: 230px;
+    }
+
+    #from_ammount,#to_ammount {
+        width: 230px;
+    }
+}
